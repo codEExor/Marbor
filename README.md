@@ -1,2 +1,2 @@
 # Marbor
-Интернет-магазин одежды [Marbor](https://codeexor.github.io/Marbor/).
+Интернет-магазин одежды "Marbor"

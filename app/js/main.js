@@ -122,4 +122,5 @@ $(function() {
     initializeClock('promo__clock', deadline);
     // Таймер блока promo
 
+
 });

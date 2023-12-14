@@ -1,5 +1,15 @@
 $(function() {
 
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
+  $('.shop__filter-btn').on('click', function(){
+    $('.shop__filters').slideToggle();
+  });
+
+  
+
     $('.blog-page__slider').slick({
       prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg"  width="7px" height="11px" viewBox="0 0 7 11" version="1.1"><g><path d="M 0.90625 5.015625 C 0.632812 5.28125 0.632812 5.71875 0.90625 5.988281 L 4.40625 9.425781 C 4.679688 9.695312 5.125 9.695312 5.398438 9.425781 C 5.671875 9.15625 5.671875 8.71875 5.398438 8.453125 L 2.390625 5.5 L 5.394531 2.546875 C 5.667969 2.28125 5.667969 1.84375 5.394531 1.574219 C 5.121094 1.304688 4.675781 1.304688 4.402344 1.574219 L 0.902344 5.011719 ZM0906255015625"><g><svg></button>',
       nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="7px" height="11px" viewBox="0 0 7 11"><g><path d="M 6.09375 5.015625 C 6.367188 5.28125 6.367188 5.71875 6.09375 5.988281 L 2.59375 9.425781 C 2.320312 9.695312 1.875 9.695312 1.601562 9.425781 C 1.328125 9.15625 1.328125 8.71875 1.601562 8.453125 L 4.609375 5.5 L 1.605469 2.546875 C 1.332031 2.28125 1.332031 1.84375 1.605469 1.574219 C 1.878906 1.304688 2.324219 1.304688 2.597656 1.574219 L 6.097656 5.011719 Z M 6.09375 5.015625 "/></g></svg></button>',
@@ -28,7 +38,15 @@ $(function() {
         asNavFor: '.product-slide__thumb',
         draggable: false,
         arrows: false,
-        fade: true
+        fade: true,
+        responsive: [
+          {
+            breakpoint: 1051,
+            settings: {
+              draggable: true,
+            }
+          },
+        ]
     });
 
     $('.shop-content__filter-btn').on('click', function() {
@@ -38,10 +56,12 @@ $(function() {
 
     $('.button-list').on('click', function() {
         $('.product-item').addClass('product-item--list');
+        $('.shop-content__inner').addClass('shop-content__nogrid');
     });
 
     $('.button-grid').on('click', function() {
         $('.product-item').removeClass('product-item--list');
+        $('.shop-content__inner').removeClass('shop-content__nogrid');
     });
 
     $('.select-style, .product-one__item-num').styler();

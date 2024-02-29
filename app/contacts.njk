@@ -19,7 +19,7 @@
 
         <section class="map">
           <div class="container">
-            <div id="map"></div>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115495.50402265743!2d55.28379020207631!3d25.229025495281363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6759c7757955%3A0xdc9a1315843ee548!2zQWwgUmFzaGlkaXlhIC0g0JTRg9Cx0LDQuSAtINCe0LHRitC10LTQuNC90LXQvdC90YvQtSDQkNGA0LDQsdGB0LrQuNC1INCt0LzQuNGA0LDRgtGL!5e0!3m2!1sru!2sru!4v1707660883031!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </section>
 
@@ -28,24 +28,22 @@
             <div class="contact__inner">
               <div class="contact__info">
                 <h3 class="contact__info-title">
-                  Feel Free Don’t
-                  Hesitate To
-                  Contact With Us
+                  Остались вопросы? Не стесняйтесь.
                 </h3>
                 <p class="contact__info-text">
-                  Lorem ipsum dolor sit amet, consectetur adingn elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo maecnaacnrao cumsan lacus vel facilisis. 
+                  Свяжитесь с нами любым удобным для вас способом. Наши менеджеры ответят на все ваши вопросы в течении 24 часов после вашего обращения. Приятных покупок!
                 </p>
                 <ul class="contact__info-list">
                   <li class="contact__info-item">
-                    <a class="contact__info-phone" href="tel:+01234567896">+0-123-456-7896</a>
-                    <a class="contact__info-phone" href="tel:+01234567896">+0-123-456-7896</a>
+                    <a class="contact__info-phone" href="tel:+01234567896">+0283 838 8393</a>
+                    <a class="contact__info-phone" href="tel:+01234567896">+0283 838 8295</a>
                   </li>
                   <li class="contact__info-item contact__info-item--location">
                     75-80 49 C St - Al Rashidiya - Dubai Объединенные Арабские Эмираты
                   </li>
                   <li class="contact__info-item contact__info-item--email">
-                    <div>yourmailaddress@gmail.com</div>
-                    <div>companymail@gmail.com</div>
+                    <div>marbor@gmail.com</div>
+                    <div>company-marbor@gmail.com</div>
                   </li>
                 </ul>
               </div>
@@ -68,18 +66,7 @@
     
      {% include 'app/module/_footer/_footer.html' %} 
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" defer></script>
-
-    <script>
-      let map;
-
-      function initMap() {
-      map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 25.213489090177315, lng: 55.27429716198156 },
-        zoom: 13, 
-      });
-      }
-    </script>
+   
 
     <script src="js/main.min.js"></script>
 </body>
